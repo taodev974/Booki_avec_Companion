@@ -169,7 +169,6 @@ a:hover {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
 }
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
