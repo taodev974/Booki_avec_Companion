@@ -25,14 +25,16 @@
       <header>
         <div class="nav-container">
           <a href="index.html">
-            <img id="logo" src="/images/logo/Booki.png" alt="logo Booki" />
+            <img id="logo" src="./images/logo/Booki.png" alt="logo Booki" />
           </a>
           <nav>
             <ul>
               <li>
-                <a href="#">Hébergements</a>
+                <a href="#section-accommodations">Hébergements</a>
               </li>
-              <li><a href="#">Activités</a></li>
+              <li>
+                <a href="#section-activities">Activités</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -44,9 +46,9 @@
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
           <div class="search-bar">
-            <div class="fa-solid2">
+            <button class="btn-location-dot">
               <i class="fa-solid fa-location-dot"></i>
-            </div>
+            </button>
             <input type="text" class="entered-area" />
             <button class="btn-search">
               <span class="txt">Recherche</span>
@@ -86,7 +88,9 @@
         <div class="accommodations-and-popular">
           <section class="accommodations">
             <div class="accommodations-title">
-              <h2 class="section-title">Hébergements à Marseille</h2>
+              <h2 class="section-title" id="section-accommodations">
+                Hébergements à Marseille
+              </h2>
             </div>
             <div class="accommodations-cards">
               <a href="#">
@@ -437,7 +441,9 @@
         </div>
 
         <section class="activities">
-          <h2 class="section-title">Activités à Marseille</h2>
+          <h2 class="section-title" id="section-activities">
+            Activités à Marseille
+          </h2>
           <div class="activities-cards">
             <a href="#">
               <article class="card">
