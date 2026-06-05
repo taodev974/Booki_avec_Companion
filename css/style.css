@@ -1,4 +1,4 @@
-/****** General ***********/
+/*********************** General ***********/
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -7,7 +7,6 @@
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
 }
-
 body {
   display: flex;
   justify-content: center;
@@ -66,7 +65,6 @@ li :hover {
   padding: 16px 0px 16px 0px;
   box-sizing: border-box;
 }
-
 header {
   display: flex;
   flex-direction: row;
@@ -86,17 +84,14 @@ header {
   flex-direction: column;
   gap: 8px;
   justify-content: space-between;
-  /* height: 53px; */
 }
 h1 {
   font-size: 22px;
-  /* margin: -1px 0px 0px 0px; */
 }
 p {
   font-size: 16px;
   margin: -1px 0px -1px 0px;
 }
-
 main {
   display: flex;
   flex-direction: column;
@@ -163,7 +158,6 @@ form {
   cursor: pointer;
   filter: drop-shadow(0px 3px 15px rgba(0, 101, 252, 0.1));
   background-color: var(--filter-bg-color);
-  /* color: #ffffff; */
   border: none;
 }
 fieldset {
@@ -184,7 +178,6 @@ fieldset {
   flex-direction: row;
   width: auto;
   gap: 15px;
-  /* max-width: 758px; */
 }
 .btn-filter div {
   border: 1px solid #d9d9d9;
@@ -233,7 +226,6 @@ a:hover {
 }
 .activities-cards a {
   text-decoration: none;
-  border: #0065fc 0px solid;
   width: fit-content;
 }
 .activities-cards a:hover {
@@ -269,8 +261,9 @@ a:hover {
 .neutral-star {
   color: var(--main-bg-color);
 }
-/****** Hebergements And Populaires ***********/
-/****** accommodations and popular ************/
+
+/****************** accommodations-and-popular ************/
+
 .accommodations-and-popular {
   display: flex;
   justify-content: space-between;
@@ -284,9 +277,8 @@ a:hover {
   box-sizing: border-box;
 }
 
-/****** Hebergements / accommodation***********/
+/***************** popular *******************************/
 
-/******  popular ***********/
 .popular {
   width: 32%;
 }
@@ -331,20 +323,19 @@ a:hover {
   margin-bottom: 5px;
 }
 
-/******accomodation *****************/
+/*********************** accomodations *****************/
+
 .accommodations {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 65%;
 }
-
 .accommodations-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .accommodations-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -353,11 +344,9 @@ a:hover {
   border: #0065fc 0px solid;
   /* align-items: stretch; */
 }
-
 .accommodations .card-txt {
   padding: 0px 15px 0px 15px;
 }
-
 .card .accommodation-img {
   height: 100%;
   object-fit: contain;
@@ -399,7 +388,8 @@ a:hover {
   margin-bottom: 5px;
 }
 
-/**************** Activities ****************/
+/************************ activities ****************/
+
 .activities {
   border-radius: 20px;
   padding: 30px;
@@ -415,7 +405,6 @@ a:hover {
   gap: 30px;
   align-items: stretch;
 }
-
 .activities h3 {
   padding: 10px 19px 10px 19px;
 }
@@ -425,7 +414,6 @@ a:hover {
   height: 100%;
   min-width: 0;
 }
-
 .activities-cards .card {
   display: flex;
   flex-direction: column;
@@ -434,13 +422,15 @@ a:hover {
   width: 100%;
   overflow: hidden;
 }
-
 .activities-cards img {
   border-radius: 20px 20px 0px 0px;
   width: 100%;
   height: 85%;
   object-fit: cover;
 }
+
+/********************** footer *****************/
+
 footer {
   display: flex;
   flex-direction: row;
@@ -468,17 +458,13 @@ footer p {
   .main-container {
     padding: 0px 50px 0px 50px;
   }
+
+  /************* accommodations-and-popular **************/
+
   .accommodations-and-popular {
     flex-direction: column;
     gap: 0;
   }
-  /* .accommodations h3.card-title {
-    white-space: nowrap;
-  }
-  .accommodations p.card-subtitle {
-    white-space: nowrap;
-  } */
-
   .accommodations {
     display: flex;
     padding: 30px;
@@ -505,7 +491,9 @@ footer p {
   .accommodations-cards div {
     height: 100%;
   }
-  /**********Popular********/
+
+  /******************************* popular ****************/
+
   .popular {
     width: 100%;
     margin-top: 50px;
@@ -525,11 +513,11 @@ footer p {
     font-size: 13px;
   }
 
-  /*************Activities******/
+  /********************** activities **********************/
+
   .activities-cards {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-
   .activities-cards a {
     width: 100%;
     /* min-height: 300px; */
@@ -552,8 +540,8 @@ footer p {
   }
   .activities-cards img {
     height: 80%;
-    /* min-height: 200px; */
   }
+
   header,
   form,
   label,
@@ -565,7 +553,6 @@ footer p {
     flex-direction: column;
     border: #0065fc 0px solid;
     width: 100%;
-    /* max-width: 668px; */
     padding-left: 0;
   }
   fieldset p {
@@ -583,7 +570,9 @@ footer p {
     font-size: 16px;
   }
 }
+
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
   .entered-area {
     width: 100%;
@@ -599,6 +588,11 @@ footer p {
     flex-direction: column;
     margin: 0 auto;
   }
+  main {
+    display: flex;
+    object-fit: contain;
+  }
+
   .info-group {
     display: flex;
     flex-direction: column;
@@ -609,6 +603,12 @@ footer p {
   h1 {
     padding: 0;
     margin: 0;
+  }
+  h2.section-title {
+    padding: 0px;
+  }
+  p {
+    width: 100%;
   }
   .main-container {
     padding: 0px 0px 0px 0px;
@@ -692,6 +692,8 @@ footer p {
     box-sizing: border-box;
   }
 
+  /************************ form *******************/
+
   .search-bar {
     display: flex;
     flex-direction: row;
@@ -731,9 +733,6 @@ footer p {
     width: 100%;
     display: flex;
   }
-  p {
-    width: 100%;
-  }
   .btn-filter {
     display: flex;
     flex-direction: row;
@@ -744,9 +743,6 @@ footer p {
     padding-left: 0px;
     width: 100%;
   }
-  /* div.btn-filter {
-    width: 100%;
-  } */
   fieldset .btn-filter div {
     width: 46%;
     height: 50px;
@@ -756,6 +752,25 @@ footer p {
     padding: 0;
     gap: 10px;
   }
+
+  /************ accommodations-and-popular ****/
+
+  .accommodations-and-popular section {
+    background-color: var(--main-bg-color);
+    border-radius: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .accommodations-and-popular {
+    /* gap: 30px; */
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+  }
+
+  /************** popular ************/
+
   .popular article.card {
     margin-top: 0;
   }
@@ -764,39 +779,6 @@ footer p {
   }
   .popular .card-subtitle {
     font-size: 14px;
-  }
-  .accommodations-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .accommodations-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  .accommodations-and-popular section {
-    background-color: var(--main-bg-color);
-    border-radius: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  /* div.accommodations-cards {
-    gap: 15px;
-    padding: 0 20px;
-  } */
-  section.accommodations {
-    width: 100%;
-    background-color: #ffffff;
-    padding: 30px 0px 30px 0px;
-  }
-  .accommodations-and-popular {
-    /* gap: 30px; */
-    flex-direction: column-reverse;
-    margin: 0;
-    padding: 0;
-    background-color: var(--main-bg-color);
   }
   .popular {
     /* margin: 0 auto; */
@@ -809,7 +791,6 @@ footer p {
   }
   div.popular-title {
     padding: 0px 20px 10px 20px;
-    /* margin-top: -10px; */
   }
   .popular-cards {
     display: flex;
@@ -824,6 +805,25 @@ footer p {
   }
   .popular-cards .card {
     box-sizing: border-box;
+  }
+
+  /*********** accommodations ************/
+
+  .accommodations-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .accommodations-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  section.accommodations {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 0px 30px 0px;
   }
   .accommodations-cards {
     display: flex;
@@ -843,8 +843,12 @@ footer p {
   div .accommodations-cards {
     gap: 20px;
   }
-  /************Activities******/
 
+  /******************* Activities **********************/
+
+  h2#section-activities.section-title {
+    padding: 0 30px;
+  }
   .activities-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -869,23 +873,9 @@ footer p {
     /* height: 100%; */
     padding: 0px 30px 0px 30px;
   }
-  /* .activities .card-title {
-    padding: 10px;
-  } */
   .activities {
     object-fit: contain;
     padding: 0px;
-  }
-  h2.section-title {
-    padding: 0px;
-  }
-  h2#section-activities.section-title {
-    padding: 0 30px;
-  }
-  main {
-    border: 0px solid red;
-    display: flex;
-    object-fit: contain;
   }
   section.activities {
     border: 0px solid blue;
