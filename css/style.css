@@ -692,8 +692,8 @@ footer p {
   }
 
   .fa-magnifying-glass {
-    color: white;
-    background-color: #0065fc;
+    color: var(--white-color);
+    background-color: var(--main-color);
     border-radius: 0px 15px 15px 0px;
     align-content: center;
     padding: 15px 16px 15px 16px;
