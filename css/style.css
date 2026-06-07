@@ -832,7 +832,11 @@ footer p {
   div .accommodations-cards {
     gap: 20px;
   }
-
+  .accommodations-cards img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: 100%;
+  }
   /******************* Activities **********************/
 
   h2#section-activities.section-title {
@@ -844,6 +848,7 @@ footer p {
   }
   div.activities-cards {
     gap: 20px;
+    aspect-ratio: 16/9;
   }
   .activities h3.card-title {
     text-align: left;
@@ -853,12 +858,11 @@ footer p {
     margin-left: 0;
   }
   .activities-cards img {
-    height: 70%;
+    height: 100%;
+    aspect-ratio: 16/9;
   }
   .activities-cards a {
-    max-height: 207.25px;
     width: auto;
-    /* height: 100%; */
     padding: 0px 30px 0px 30px;
   }
   .activities {
