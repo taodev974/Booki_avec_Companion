@@ -368,7 +368,8 @@ a:hover {
 .accommodations-cards img {
   width: 100%;
   border-radius: 15px 15px 0px 0px;
-  height: 8em;
+  height: 100%;
+  aspect-ratio: 125/62;
 }
 .accommodations-cards .card-content {
   width: 67%;
@@ -426,7 +427,8 @@ a:hover {
 .activities-cards img {
   border-radius: 20px 20px 0px 0px;
   width: 100%;
-  height: 85%;
+  height: 100%;
+  aspect-ratio: 297/380;
   object-fit: cover;
 }
 
@@ -494,6 +496,9 @@ footer p {
   .accommodations-cards div {
     height: 100%;
   }
+  .accommodation-img {
+    aspect-ratio: 67/31;
+  }
 
   /******************************* popular ****************/
 
@@ -542,7 +547,8 @@ footer p {
     width: auto;
   }
   .activities-cards img {
-    height: 80%;
+    height: 100%;
+    aspect-ratio: 193/200;
   }
 
   header,
@@ -842,7 +848,7 @@ footer p {
   }
   .accommodations-cards img {
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 337/124;
     height: 100%;
   }
   /******************* Activities **********************/
@@ -867,7 +873,7 @@ footer p {
   }
   .activities-cards img {
     height: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 105/45;
   }
   .activities-cards a {
     width: auto;
