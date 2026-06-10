@@ -473,12 +473,6 @@ footer p {
     gap: 0;
   }
   .accommodations {
-    display: flex;
-    padding: 30px;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .accommodations {
     width: 100%;
   }
   .accommodations .card-txt {
