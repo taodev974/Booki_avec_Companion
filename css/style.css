@@ -72,11 +72,10 @@ header {
   width: auto;
   height: 79px;
 }
-.info-group {
+form {
   display: flex;
   flex-direction: column;
   gap: 35px;
-  border: 1px;
 }
 .headline {
   display: flex;
@@ -191,7 +190,7 @@ fieldset {
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   padding: 0px 19px 0px 19px;
   display: flex;
   white-space: nowrap;
@@ -442,20 +441,17 @@ footer {
   max-width: 1340px;
   max-height: 163px;
 }
-.footer-title {
-  font-size: 18px;
-  font-weight: 700;
+footer h4 {
+  padding: 0;
+  margin: 0;
 }
-
 footer div {
-  width: 100%;
-}
-footer p {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 15px;
   padding: 20px;
+  width: 100%;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -562,8 +558,16 @@ footer p {
   }
   fieldset .btn-filter {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+  }
+  div.btn-filter {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .btn-filter div {
+    padding: 0 1em;
   }
   .entered-area {
     width: 100%;
@@ -574,6 +578,10 @@ footer p {
 /* Small devices (phones, less than 768px) */
 
 @media (max-width: 767.98px) {
+  .headline {
+    padding: 0 20px;
+  }
+
   .entered-area {
     width: 100%;
     font-size: 16px;
@@ -591,14 +599,6 @@ footer p {
   main {
     display: flex;
     object-fit: contain;
-  }
-
-  .info-group {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    border: 1px;
-    padding: 0 20px;
   }
   h1 {
     padding: 0;
@@ -690,7 +690,9 @@ footer p {
   }
 
   /************************ form *******************/
-
+  form {
+    padding: 0 20px;
+  }
   .search-bar {
     display: flex;
     flex-direction: row;
@@ -730,10 +732,12 @@ footer p {
     width: 100%;
     display: flex;
   }
-  .btn-filter {
-    display: flex;
-    flex-direction: row;
+  div.btn-filter {
     flex-wrap: wrap;
+  }
+  .btn-filter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     font-size: 14px;
     justify-content: space-between;
     align-items: center;
@@ -887,10 +891,9 @@ footer p {
     max-height: 461px;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 30px;
   }
-
-  footer p {
-    width: auto;
+  footer div {
+    padding: 20px 0;
   }
 }
